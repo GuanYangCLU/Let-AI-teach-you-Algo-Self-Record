@@ -1,5 +1,5 @@
+### two-sum:
 ```
-two-sum:
 class Solution:
     def twoSum(self, nums: List[int], target: int) -> List[int]:
         resIndex = dict()
@@ -7,8 +7,10 @@ class Solution:
             if (target - nums[i]) in resIndex:
                 return [i, resIndex[target - nums[i]]]
             resIndex[nums[i]] = i
+```
 
-move-zeroes:
+### move-zeroes:
+```
 class Solution:
     def moveZeroes(self, nums: List[int]) -> None:
         """
@@ -28,8 +30,10 @@ class Solution:
                 continue
             no_z_idx += 1
         return nums
+```
 
-reverse-string:
+### reverse-string:
+```
 class Solution:
     def reverseString(self, s: List[str]) -> None:
         """
