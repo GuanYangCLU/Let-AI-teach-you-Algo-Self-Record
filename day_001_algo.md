@@ -1,5 +1,5 @@
 ### two-sum:
-```
+```python
 class Solution:
     def twoSum(self, nums: List[int], target: int) -> List[int]:
         resIndex = dict()
@@ -10,7 +10,7 @@ class Solution:
 ```
 
 ### move-zeroes:
-```
+```python
 class Solution:
     def moveZeroes(self, nums: List[int]) -> None:
         """
@@ -33,7 +33,7 @@ class Solution:
 ```
 
 ### reverse-string:
-```
+```python
 class Solution:
     def reverseString(self, s: List[str]) -> None:
         """
