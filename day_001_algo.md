@@ -1,3 +1,48 @@
+```
+two-sum:
+class Solution:
+    def twoSum(self, nums: List[int], target: int) -> List[int]:
+        resIndex = dict()
+        for i in range(len(nums)):
+            if (target - nums[i]) in resIndex:
+                return [i, resIndex[target - nums[i]]]
+            resIndex[nums[i]] = i
+
+move-zeroes:
+class Solution:
+    def moveZeroes(self, nums: List[int]) -> None:
+        """
+        Do not return anything, modify nums in-place instead.
+        """
+        nlen = len(nums)
+        z_idx, no_z_idx = 0, 0
+        while (z_idx < nlen) and (no_z_idx < nlen):
+            if nums[z_idx] != 0:
+                z_idx += 1
+                continue
+            if nums[no_z_idx] == 0:
+                no_z_idx += 1
+                continue
+            if z_idx < no_z_idx:
+                nums[z_idx], nums[no_z_idx] = nums[no_z_idx], nums[z_idx]
+                continue
+            no_z_idx += 1
+        return nums
+
+reverse-string:
+class Solution:
+    def reverseString(self, s: List[str]) -> None:
+        """
+        Do not return anything, modify s in-place instead.
+        """
+        left, right = 0, len(s) - 1
+        while left < right:
+            s[left], s[right] = s[right], s[left]
+            left += 1
+            right -= 1
+        return s
+```
+
 当然可以，下面是你刚刚提交的三道算法题的英文点评版本，格式采用 Markdown 适合直接保存到 GitHub：
 
 ---
