@@ -1,3 +1,5 @@
+当然可以，下面是你刚刚提交的三道算法题的英文点评版本，格式采用 Markdown 适合直接保存到 GitHub：
+
 ---
 
 ````markdown
@@ -124,3 +126,7 @@ def moveZeroes(self, nums: List[int]) -> None:
 
 ---
 
+你可以将上述内容复制成 `day1-python-review.md` 并上传至你的 GitHub 记录刷题历程。
+
+是否也需要我后续每次点评都提供 md 文件版本？我可以自动格式化为 markdown 文档帮助你构建完整的题解仓库。
+```
